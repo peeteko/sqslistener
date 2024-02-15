@@ -9,8 +9,10 @@ import software.amazon.awssdk.services.sqs.SqsAsyncClient;
 
 @SpringBootApplication
 public class DemoApplication {
-
+    //simulation https://github.com/awspring/spring-cloud-aws/issues/1052
 	public static void main(String[] args) {
+
+		System.out.println(System.getProperty("user.home"));
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
